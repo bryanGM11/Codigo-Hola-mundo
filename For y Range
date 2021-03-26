@@ -1,0 +1,54 @@
+#1
+for a in range(0,10):
+    print(a)
+
+#2
+for b in range(100, 200):
+    print(b)
+    
+#3
+for c in range(5,21,3):
+    print(c)
+
+#4
+n=int(input("Número: "))
+for x in range(n, n*2):
+    print(x)
+
+#5
+frase= input("frase:")
+print("las vocales son:")
+for n in "aeiou":
+    if n in frase:
+        print(n)
+        
+#6
+c=int(input("Ingrese una frase: "))
+total=0
+for variable in range(c):
+   numero=int(input("Número: "))
+   total+=numero
+print("Total de la suma:", total)
+
+
+#8
+anioInicio=int(input("Año inicial:"))
+anioFin=int(input("Año final:"))
+for anio in range(anioInicio, anioFin+1):
+   if not anio%10==0:
+       continue
+   if not anio%4==0:
+       continue
+   if anio%100!=0 or anio%400==0:
+       print(anio)
+       
+#9
+numero=int(input("Número:"))
+f=1
+if numero!=0:
+    for i in range(1,numero+1):
+        f=f*i
+print("Factorial:", f)
+       
+    
+    
